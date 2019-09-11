@@ -15,3 +15,8 @@ The neural network -
 5) The third and last step is to setup the 'Y' variable, which contains the correct 'answers' to those examples, as a 10 dimensional column vector. 10 dimensional because we are classifying the digits from 0 to 9, so, each row in the column vector corresponds to one of the 10 digits.
 6) Now, the neural network. We simply create a sequential model which means the output of one layer is the input of the next layer(as in a sequence). We have 2 layers(a hidden layer and an output layer) and one 784 vector input layer. The hidden layer consists of 28 neurons with 'relu' as the activation function. The model is optimized using 'Adam' with 'categorical_crossentropy' being the loss function(which often goes with classification problems)
 7) You can experiment with these algorithms
+
+
+
+
+Note - This model shall soon be updated with the latest version
