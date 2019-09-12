@@ -7,6 +7,7 @@ def predict():
 
     predict_image = load_img('image.jpg', target_size = (28, 28), color_mode='grayscale')
     predict_image = img_to_array(predict_image)
+    predict_image = (predict_image/255)
     predict_image = predict_image.reshape(1, -1)
 
     # predict the result
