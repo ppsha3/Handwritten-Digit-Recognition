@@ -8,7 +8,6 @@ from Colours import colours
 def guess_number():
     pygame.image.save(draw_surface, "image.jpg")   # first, we save the image
     draw_surface.fill(colours['black'])    # reset the screen
-
     return predict()      # then predict using our save model and return the number
 
 
@@ -33,6 +32,8 @@ def handleEvents(events):
                 draw_surface.fill(colours['black'])
 
 
+
+
 def draw_digit(events):
     for event in events:
         if pygame.mouse.get_pressed()[0]:
@@ -40,7 +41,7 @@ def draw_digit(events):
                 draw_surface,
                 colours['white'],
                 pygame.mouse.get_pos(),
-                1
+                2
             )
 
 
@@ -90,7 +91,7 @@ clear_button = Button.Button(
                 )
 clear_button.setText('Clear')
 
-# Finally, initialize the guessed number to None
+# Finally, initialize the guessed number
 number = None
 
 loop()
